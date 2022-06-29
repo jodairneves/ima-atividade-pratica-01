@@ -2,3 +2,173 @@
   font-family: 'Arial';
   src: url('/fonts/arial.ttf') format('truetype');
 }
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tabela */
+table {
+  display: block;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+table th,
+table td {
+  width: 40px;
+  height: 40px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td:nth-last-child(1),
+thead th:nth-last-child(1) {
+  width: 50px;
+}
+
+.tb-time {
+  border-left: none;
+}
+
+table tr:nth-child(4),
+tr:nth-child(16) {
+  border-bottom: 2px solid #ccc;
+}
+
+/* Posições de classificação */
+tbody td:nth-child(1),
+thead th:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-right: none;
+}
+
+.classificacao {
+  color: #cccccc;
+}
+
+.libertadores {
+  color: #003366;
+}
+
+.pre-libertadores {
+  color: #1398be;
+}
+
+.sul-americana {
+  color: #de9800;
+}
+
+.rebaixados {
+  color: #c91b04;
+}
+
+/* Títulos das colunas */
+table th {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Nome dos times */
+table td:nth-child(2) {
+  width: 300px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Quantidade de pontos dos times */
+table td:nth-child(3) {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Demais colunas */
+table td {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+
+tbody .tb-color-primary {
+  background-color: #f7f7f7;
+}
+
+/* Legendas */
+.legendas-significados ul {
+  font-size: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #555555;
+  display: flex;
+  list-style: none;
+}
+
+.legendas-significados ul li {
+  padding: 0px 10px 0px 10px;
+}
+
+.legendas-siglas ul {
+  font-size: 10px;
+  font-weight: bold;
+  color: #555555;
+  display: flex;
+  list-style: none;
+}
+
+.legendas-siglas ul li {
+  padding: 0px 0px 0px 10px;
+}
+
+.cb-libertadores {
+  height: 10px;
+  width: 10px;
+  background-color: #003366;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.cb-pre-libertadores {
+  height: 10px;
+  width: 10px;
+  background-color: #1398be;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.cb-sul-americana {
+  height: 10px;
+  width: 10px;
+  background-color: #de9800;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.cb-rebaixados {
+  height: 10px;
+  width: 10px;
+  background-color: #c91b04;
+  border-radius: 2px;
+  display: inline-block;
+}
